@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: rgba(172, 44, 44, 0.884);}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        </style>
+        <body class="w3-black">
+
+         <img src="file:///C:/Users/user/Desktop/CSS%20Individual/Photo/raya.jpg" style="width:100%">
+          <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+          </a>
+          <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+          </a>
+          <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PHOTOS</p>
+          </a>
+          <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>EXPERIENCE</p>
+          </a>
+
+          <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <div class="w3-container w3-center w3-animate-right"></div>
+            <h2 class="w3-text-light-grey">Hello There and Feel Free to Say Hi!</h2>
+            <hr style="width: 900px;" class="w3-opacity">
+            <div class="w3-panel w3-amber">
+                <h1 class="w3-text-blue" style="text-shadow:1px 1px 0 #444">
+
+ <div class="w3-container"></div>
+            <h3 class= "w3-padding-16 w3-text-light-grey">Education</h3>
+            
+            <table class="w3-table-all w3-card-4">
+                <tr>
+                  <th>Level of Education</th>
+                    <th>School Name</th>
+                  <th>Result</th>
+                </tr>
+                <tr>
+                  <td>Primary School</td>
+                  <td>SK Wira Jaya</td>
+                  <td>4A 2B</td>
+                </tr>
+                <tr>
+                  <td>Secondary School</td>
+                  <td>SMK Sungai Tapang</td>
+                  <td>4A 5B+</td>
+                </tr>
+                <tr>
+                  <td>Foundation of Agricultural Science</td>
+                  <td>Universiti Putra Malaysia</td>
+                  <td> CGPA: 3.80 </td>
+                </tr>
+                 <tr>
+                  <td>Degree of Aerospace Engineering</td>
+                  <td>Universiti Putra Malaysia</td>
+                  <td>CGPA: 3.90</td>
+                </tr>
+                
+              </table>
+            </div>
+
+              <div class="w3-padding-14 w3-content" id="photos">
+    <h5 class="w3-text-light-grey">My Photos</h5>
+    <hr style="width:200px" class="w3-opacity">
+    
+      <div class="w3-padding-64 w3-content w3-text-grey" id="Experience">
+    <h2 class="w3-text-light-grey">Experience</h2>
+    <hr style="width:200px" class="w3-opacity">
+    </div>
+            
+            <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2500);    
+
+                <div class="w3-padding-64 w3-content w3-text-grey" id="Videos">
+                <h2 class="w3-text-light-grey">Videos</h2>
+
+                var scroll = new SmoothScroll('a[href*="#"]', { 
+      speed: 1000,
+      speedAsDuration: true
+    });
